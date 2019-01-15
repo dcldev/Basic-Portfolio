@@ -9,12 +9,32 @@
         font-family: Arial, Helvetica, sans-serif
     }
 
-    footer {
+    #footer {
         height: 50px;
         width: 100%;
         background-color: black;
-        position: absolute;
+        position: fixed;
         bottom: 10;
+        z-index: 0;
+    }
+
+    #footertext {
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        bottom: 20;
+        text-align: right;
+        margin-right: 400;
+        margin-top: 10;
+        z-index: 2;
+        }
+
+    #orangebox {
+        height: 50px;
+        width: 450px;
+        background-color: rgb(255, 81, 0);
+        margin: -42 10 10 0;
+        z-index: 1;
     }
 
     #navbar{ 
@@ -35,10 +55,10 @@
     #navicon {
         background-color: white;
         height: 50px;
-        width: 28px;
-        position: absolute;
-        top: 100px;
-        left: 891;
+        width: 28.5px;
+        position: relative;
+        top: 0;
+        right: 28;
     }
 
     #navicontext {
@@ -47,17 +67,18 @@
         color: black;
         text-align: center;
         transform: rotate(-90deg);
-        margin-top: 16px;
-    
+        position: absolute;
+        top: 10;
+        right: -8;
     }
 
     #navbuttons{
         background-color: black;
         position: fixed;
         height: 50px;
-        width: 33%;
+        width: 450px;
         text-align: center;
-        margin: 70 auto;
+        margin: 90 auto;
         right: 0;
     }
     
@@ -66,10 +87,11 @@
         display: inline;
         color: white;
         padding: 0px 14px 0px 11px;
-        top: 5px;
+        top: -20;
         position: relative;
         font-weight: bold;
         text-align: center;
+        right: 1;
     }
 
 
