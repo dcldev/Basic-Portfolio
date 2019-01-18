@@ -166,7 +166,7 @@ li a {
 
 #content {
     background-color: black;
-    height: 1000px;
+    height: 450px;
     width: 720px;
     margin: auto;
     top: 210px;
@@ -188,67 +188,81 @@ h1 {
 
 /* PORTFOLIO BOXES CSS BEGINS HERE */
 
-.portfolioboxes {
-    height: 720px;
-    width: 720px;
-    position: absolute;
-}
+.flex-container {
+    display: flex;
+    justify-content: center;
+  }
 
-#box1{
-    border: solid;
-    border-color: black;
-    background-color: lightgrey;
-    height: 360px;
-    width: 360px;
-    left: 0;
-    top: 0;
+.flex-container > div {
+    background-color: none;
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
+
+/* PORTFOLIO BOXES CSS BEGINS HERE */
+
+/* IMAGE CONTAINERS CSS BEGINS HERE */
+
+.square {
     position: relative;
-    background-repeat: no-repeat;
-    z-index: 0;
+    width: 200px;     
+    height: 200px;
+    overflow: hidden;
+ }
+
+img {
+    position: absolute;
+    max-width: 200%;
+    width: 100%;
+    height: auto;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
 }
 
-#box1text{
-    color: red;
+img.landscape {
+   height: auto;
+   width: auto;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+.container:hover .middle {
+    opacity: 1;
+  }
+  
+.text {
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-style: helvetica;
     font-weight: bold;
-    position: absolute;
-    left: 150px;
-    bottom: 50px;
-    text-align: justify;
-    z-index: 1;
-}
+    padding: 16px 16px;
+  }
 
-#box2{
-    background-color: lightgrey;
-    height: 360px;
-    width: 360px;
-    right: 0;
-    top: 0;
-    position: absolute;
-}
+/* OVERALY TEST END */
 
-#box3{
-    background-color: lightgrey;
-    height: 360px;
-    width: 360px;
-    bottom: 0;
-    left: 0;
-    position: absolute;
-}
 
-#box4{
-    background-color: lightgrey;
-    height: 360px;
-    width: 360px;
-    bottom: 0;
-    right: 0;
-    position: absolute;
-}
+/* IMAGE CONTAINERS CSS ENDS HERE */
 
 #pbody {
-    height: 720px;
+    height: 400px;
     width: 720px;
     position: relative;
     margin: 0;
+    top: 20px;
 }
 
 #pbodytext {
